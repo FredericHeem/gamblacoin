@@ -1,0 +1,16 @@
+{
+	"port":8080,
+	"db": {
+		"hostname": "localhost",
+		"port": 27017,
+		"username": "gamb1ac0in",
+		"password": "gamb1ac0in1234",
+		"dbName": "gamblacoin"
+	},
+	"bitcoinClient": {
+		"hostname": "localhost",
+		"port": 8332,  
+		"username": "gamblacoin",
+		"password": "gamblacoin1234"
+	}
+}

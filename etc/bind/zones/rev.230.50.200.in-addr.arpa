@@ -1,0 +1,11 @@
+@ IN SOA ns1.gamblacoin.com. admin.gamblacoin.com. (
+201310241;
+28800;
+604800;
+604800;
+86400 );
+
+230.50.200.in-addr.arpa. IN NS ns1.gamblacoin.com.
+230.50.200.in-addr.arpa. IN NS ns2.gamblacoin.com.
+
+100 IN PTR gamblacoin.com.

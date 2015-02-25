@@ -1,0 +1,27 @@
+﻿<div class="container">
+    <table class="table table-hover" id="transitionTable">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Confirmations</th>
+                <th>Date</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <% _.each( model.transactions, function( transaction ){ %>
+            <tr>
+                <td><%- transaction.amount %> BTC </td>
+                <td><%- transaction.confirmations %> </td>
+                <td><%- Moment(transaction.time * 1000).format('h:mm A D MMM YYYY') %>  </td>
+                <td><%- transaction.address %> </td>
+            </tr>
+            <% }); %>
+        </tbody>
+
+
+    </table>
+</div>
+
+

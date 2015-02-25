@@ -1,0 +1,3 @@
+#GamblaCoin
+
+Gamble with cryptcocurrencies sush as Bitcoin, Litecoin etc ...

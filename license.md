@@ -1,0 +1,1 @@
+All right reserved - Copyright (c) 2013 - Frederic Heem

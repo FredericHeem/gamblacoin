@@ -1,0 +1,48 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 hidden-phone">
+        </div>
+        <div class="span6" id="form-login">
+            <form class="form-horizontal well">
+                <fieldset>
+                    <legend class="center">Login Form</legend>
+                    <div id="login-error" class="hide alert alert-error"></div>
+                    <div class="control-group userpass-cg">
+                        <div class="control-label">
+                            <label>
+                                Username</label>
+                        </div>
+                        <div class="controls">
+                            <input id="username" type="text" placeholder="type your username" class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" autofocus="autofocus"/>
+                        </div>
+                    </div>
+                    <div class="control-group userpass-cg">
+                        <div class="control-label">
+                            <label>
+                                Password</label>
+                        </div>
+                        <div class="controls">
+                            <input id="password" type="password" placeholder="type your password" class="input-large" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="button" id="loginSubmitButton" class="btn btn-primary button-loading input-large"
+                                data-loading-text="Login in ...">
+                                Sign in</button>
+                            <img src='/img/spinner.gif' class='spinner hide' id="loading-indicator"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="button" class="btn btn-secondary button-loading input-large" data-loading-text="Loading...">
+                                Forgot Password</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="span3 hidden-phone">
+        </div>
+    </div>
+</div>

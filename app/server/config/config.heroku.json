@@ -1,0 +1,10 @@
+{
+  "url": "http://coinfeed.herokuapp.com/",
+  "db": {
+      "hostname": "ds037368.mongolab.com",
+      "port": 37368,  
+	  "username": "gamblacoin",
+      "password": "gamblacoin1234",
+      "dbName": "gamblacoin"
+  }
+}

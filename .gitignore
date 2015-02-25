@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+app/server/modules/email-settings-mine.js
+*.suo
+.coverage
+coverage.html
+log.txt
+gamblacoin.sys.log
+dist
+*.csv
+.project
+/public
+
+

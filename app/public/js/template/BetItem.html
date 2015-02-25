@@ -1,0 +1,10 @@
+﻿<div class="bet-item-view"  data-betid="<%- model.betId %>">
+    <% if (displayUser) { %>
+    <div class="rowcell user"><%- model.userId %></div>
+    <% } %>
+    <div class="rowcell cellamount"><%- Accounting.formatUBTC(model.bet) %></div>
+    <div class="rowcell cellamount <%- profitColor %> "><%- Accounting.formatUBTC(model.profitLoss) %></div>
+    <div class="rowcell"><%- model.roll %></div>
+    <div class="rowcell"><%- model.targetNumber %></div>
+    <div class="rowcell"><%- Moment(model.date).format('HH:mm') %></div>
+</div>

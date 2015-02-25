@@ -1,0 +1,132 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav ">
+                <li><a href="#clientseed-change"><i class="icon-chevron-right"></i>Client Seed</a></li>
+                <li><a href="#email-change"><i class="icon-chevron-right"></i>Email</a></li>
+                <li><a href="#password-change"><i class="icon-chevron-right"></i>Password</a></li>
+            </ul>
+        </div>
+        <div class="span6">
+            <section id="clientseed-change">
+                <form class="form-horizontal well" id="form-clientseed-change">
+                    <fieldset>
+                        <legend>Client Seed Change</legend>
+                        <div id="alert-error-email-clientseed" class="hide alert alert-error"></div>
+                        <div id="alert-success-clientseed" class="hide alert alert-success">
+                            <a class="close" data-dismiss="alert">×</a>
+                            Client seed changed  
+                        </div>
+                        <div class="pagination-centered">
+                            <p>Current client seed: <span><%- preference.clientSeed %></span></p>
+                        </div>
+                        <div class="control-group" id="Div4">
+                            <div class="control-label">
+                                <label>
+                                    Client Seed</label>
+                            </div>
+                            <div class="controls">
+                                <input id="inputClientSeed" type="text" placeholder="type your client seed" class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button type="button" id="userSaveClientSeedSubmitButton" class="btn btn-primary button-loading input-large"
+                                    data-loading-text="Saving client seed">
+                                    Save client seed</button>
+                                <img src='/img/spinner.gif' class='spinner hide' id="Img1" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="email-change">
+                <form class="form-horizontal well " id="form-email-change">
+                    <fieldset>
+                        <legend>Email Change</legend>
+                        <div id="alert-error-email" class="hide alert alert-error"></div>
+                        <div id="alert-success-email" class="hide alert alert-success">
+                            <a class="close" data-dismiss="alert">×</a>
+                            Email changed  
+                        </div>
+                        <div class="pagination-centered">
+                            <% if (model.email) { %>
+                      <p>Current email: <span><%- model.email %></span></p>
+                            <% } else { %>
+                       <p>No email is currently</p>
+                            <% } %>
+               
+                        </div>
+                        <div class="control-group" id="Div3">
+                            <div class="control-label">
+                                <label>
+                                    Email</label>
+                            </div>
+                            <div class="controls">
+                                <input id="email" type="text" placeholder="type your email address" class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button type="button" id="userSaveEmailSubmitButton" class="btn btn-primary button-loading input-large"
+                                    data-loading-text="Saving new email">
+                                    Save new  email</button>
+                                <img src='/img/spinner.gif' class='spinner hide' id="SaveEmailLoadingIndicator" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="password-change">
+
+                <form class="form-horizontal well " id="form-password-change">
+                    <fieldset>
+                        <legend>Password Change</legend>
+                        <div id="alert-error-password" class="hide alert alert-error"></div>
+                        <div id="alert-success-password" class="hide alert alert-success">
+                            <a class="close" data-dismiss="alert">×</a>
+                            Password changed  
+                        </div>
+
+                        <div class="control-group password-cg">
+                            <div class="control-label">
+                                <label>
+                                    Current Password</label>
+                            </div>
+                            <div class="controls">
+                                <input id="passwordOld" type="password" placeholder="type your current password" class="input-large" />
+                            </div>
+                        </div>
+                        <div class="control-group password-cg">
+                            <div class="control-label">
+                                <label>
+                                    New Password</label>
+                            </div>
+                            <div class="controls">
+                                <input id="passwordNew" type="password" placeholder="type your new password" class="input-large" />
+                            </div>
+                        </div>
+                        <div class="control-group password-cg">
+                            <div class="control-label">
+                                <label>
+                                    Confirm New Password</label>
+                            </div>
+                            <div class="controls">
+                                <input id="passwordNewCheck" type="password" placeholder="type your new password" class="input-large" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button type="button" id="userSavePasswordSubmitButton" class="btn btn-primary button-loading input-large"
+                                    data-loading-text="Setting new password ...">
+                                    Set new password</button>
+                                <img src='/img/spinner.gif' class='spinner hide' id="loading-indicator" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+

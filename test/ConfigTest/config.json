@@ -1,0 +1,25 @@
+{
+  "user1" : {
+    "username" : "TestUserToRegister",
+    "userId" : "9999999",
+    "email" : "TestEmailToRegister@mail.com",
+    "password" : "testpassword"
+  },
+  "userWithdraw" : {
+    "username" : "TestUserWithdraw",
+    "email" : "TestEmailWithdraw@mail.com",
+    "password" : "testpassword"
+  },
+  "userAdmin" : {
+    "username" : "poweruser",
+    "password" : "userpower"
+  },
+
+  "clientSeed" : "012345678",
+  "bitcoinClient": {
+      "hostname": "192.168.1.12",
+      "port": 19011,  
+      "username": "gamblacointestlocalUser",
+      "password": "gamblacointestlocalUser1234"
+    }
+}

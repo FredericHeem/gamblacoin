@@ -1,0 +1,46 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 hidden-phone">
+        </div>
+        <div class="span6" id="form-login">
+            <form class="form-horizontal well">
+                <fieldset>
+                    <legend class="center">Withdraw Form</legend>
+                    <div id="login-error" class="hide alert alert-error"></div>
+                    <div id="alert-success-withdraw" class="hide alert alert-success">
+                        <a class="close" data-dismiss="alert">×</a>
+                        Withdraw successfull
+                    </div>
+                    <div class="control-group withdraw-cg">
+                        <div class="control-label">
+                            <label>
+                                Address</label>
+                        </div>
+                        <div class="controls">
+                            <input id="address" type="text" size="38" maxlength="38" placeholder="receiving address" class="coinaddress" autocapitalize="off" autocorrect="off" autocomplete="off" autofocus="autofocus"/>
+                        </div>
+                    </div>
+                    <div class="control-group withdraw-cg">
+                        <div class="control-label">
+                            <label>
+                                Amount in <span class="currencyUnit">mBTC</span></label>
+                        </div>
+                        <div class="controls">
+                            <input id="amount" type="text"  placeholder="Amount " class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" autofocus="autofocus"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="button" id="withdrawSubmitButton" class="btn btn-primary button-loading input-large"
+                                data-loading-text="withdraw ...">
+                                Withdraw</button>
+                            <img src='/img/spinner.gif' class='spinner hide' id="loading-indicator"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="span3 hidden-phone">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 hidden-phone">
+        </div>
+        <div class="span7 well">
+            <h3>Bet Details Information</h3>
+            <div id="bet-detail-error" class="hide alert alert-error">
+                <a class="close" data-dismiss="alert">×</a>
+            </div>
+            <table class="table">
+                <tr>
+                    <td>User Id</td>
+                    <td><a href="#/user/<%- model.userId %>"><%- model.userId %></a></td>
+                </tr>
+
+                <tr>
+                    <td>Bet Id</td>
+                    <td><%- model.betId %></td>
+                </tr>
+                <tr>
+                    <td>Bet Amount</td>
+                    <td><span class="amount-cell"><%- Accounting.formatUBTC(model.bet)  %></span> mBTC</td>
+                </tr>
+                <tr>
+                    <td>Payout </td>
+                    <td><%- model.payout %></td>
+                </tr>
+                <tr>
+                    <td>Roll </td>
+                    <td class="<%- model.win ?  'cellwin' :  'cellloose' %>"><%- model.roll %></td>
+                </tr>
+                <tr>
+                    <td>Target Number </td>
+                    <td><%- model.targetNumber %></td>
+                </tr>
+                <tr>
+                    <td>Max Roll </td>
+                    <td><%- model.maxRoll %></td>
+                </tr>
+
+                <tr>
+                    <td>Profit/Loss </td>
+                    <td class="<%- model.win ?  'cellwin' :  'cellloose' %>">
+                        <span class="amount-cell"><%- Accounting.formatUBTC(model.profitLoss)  %></span> mBTC</td>
+                </tr>
+                <tr>
+                    <td>Total profit </td>
+                    <td>
+                        <span class="amount-cell"><%- Accounting.formatUBTC(model.userProfit)  %></span> mBTC</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>
+                        <span class="amount-cell"><%- Accounting.formatUBTC(model.userBalance)  %></span> mBTC</td>
+                </tr>
+                <tr>
+                    <td>Bank Profit</td>
+                    <td>
+                        <span class="amount-cell"><%- Accounting.formatUBTC(model.bankProfit)  %></span> mBTC</td>
+                </tr>
+
+                <tr>
+                    <td>Server Seed </td>
+                    <td><%- model.serverSeed %></td>
+                </tr>
+                <tr>
+                    <td>Client Seed </td>
+                    <td><%- model.clientSeed %></td>
+                </tr>
+                <tr>
+                    <td>Bet Number </td>
+                    <td><%- model.betNumberPlayer %></td>
+                </tr>
+
+                <tr>
+                    <td>Next Server Seed hash </td>
+                    <td><%- model.serverSeedHashNext %></td>
+                </tr>
+                <tr>
+                    <td>Date </td>
+                    <td><%- Moment(model.date).format('HH:mm D MMM YYYY')  %></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+

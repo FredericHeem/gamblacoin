@@ -1,0 +1,55 @@
+﻿<div id="play-container">
+    <div class="alert alert-error hide">
+        Internal Server Error 
+    </div>
+
+    <table class="table-center text-center" id="play-table">
+        <tr>
+            <td colspan="5">
+                <button class="btn-bet btn-primary btn-play"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn-bet btn btn-min-payout">MIN</button>
+            </td>
+            <td>
+                <button class="btn-bet btn btn-decrement-payout">-</button>
+            </td>
+            <td class="">
+                <button class="btn-bet btn">
+                    <span>X </span><span id="payout-amount">2</span>
+                </button>
+            </td>
+            <td>
+                <button class="btn-bet btn btn-increment-payout">+</button>
+            </td>
+            <td>
+                <button class="btn-bet btn btn-max-payout">MAX</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn-bet btn btn-min-bet">MIN</button>
+            </td>
+            <td>
+                <button class="btn-bet btn btn-decrement-bet">-</button>
+            </td>
+            <td class="">
+                <button class="btn-bet btn">
+                    <span id="bet-amount"></span><span class="currencyUnit"> <%- model.unit %></span>
+                </button>
+
+            </td>
+            <td>
+                <button class="btn-bet btn btn-increment-bet">+</button>
+            </td>
+            <td>
+                <button class="btn-bet btn btn-max-bet">MAX</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+    </table>
+</div>

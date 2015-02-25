@@ -1,0 +1,61 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 hidden-phone">
+        </div>
+        <div class="span6" id="form-register">
+            <form class="form-horizontal well">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <div id="register-error" class="hide alert alert-error"></div>
+                    <div class="control-group" id="username-cg">
+                        <div class="control-label">
+                            <label>
+                                Username</label>
+                        </div>
+                        <div class="controls">
+                            <input id="username" type="text" placeholder="type your username" class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" autofocus="autofocus" />
+                        </div>
+                    </div>
+                    <div class="control-group password-cg">
+                        <div class="control-label">
+                            <label>
+                                Password</label>
+                        </div>
+                        <div class="controls">
+                            <input id="password" type="password" placeholder="type your password" class="input-large" />
+                        </div>
+                    </div>
+                    <div class="control-group password-cg">
+                        <div class="control-label">
+                            <label>
+                                Confirm Password</label>
+                        </div>
+                        <div class="controls">
+                            <input id="password_check" type="password" placeholder="type your password" class="input-large" />
+                        </div>
+                    </div>
+                    <div class="control-group" id="email-cg">
+                        <div class="control-label">
+                            <label>
+                                Email (Optional)</label>
+                        </div>
+                        <div class="controls">
+                            <input id="email" type="text" placeholder="type your email address" class="input-large" autocapitalize="off" autocorrect="off" autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="button" id="registerSubmitButton" class="btn btn-primary button-loading input-large"
+                                data-loading-text="Registering ...">
+                                Register</button>
+                            <img src='/img/spinner.gif' class='spinner hide' id="loading-indicator" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="span3 hidden-phone">
+        </div>
+    </div>
+</div>

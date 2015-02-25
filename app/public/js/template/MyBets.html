@@ -1,0 +1,40 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span3 hidden-phone">
+        </div>
+        <div class="span7 well">
+            <h4>Account Statistics</h4>
+            <table class="table">
+                <tr>
+                    <td>User Id</td>
+                    <td><a href="#/user/<%- model.userId %>"><%- model.username %></a></td>
+                </tr>
+                <tr>
+                    <td>Number of bets</td>
+                    <td><%- model.betNumber %></td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td><span class="amount-cell"><%- Accounting.formatUBTC(model.balance)  %></span> mBTC</td>
+                </tr>
+
+                <tr>
+                    <td>Profit</td>
+                    <td><span class="amount-cell"><%- Accounting.formatUBTC(model.profit)  %></span> mBTC</td>
+                </tr>
+                <tr>
+                    <td>Total Deposit</td>
+                    <td><span class="amount-cell"><%- Accounting.formatUBTC(model.receivedUnconfirmed)  %></span> mBTC</td>
+                </tr>
+
+            </table>
+            <h4>My Bets:</h4>
+            <div id="myBetsGrid">
+            </div>
+            <div id="myBetsGridPaginator">
+            </div>
+        </div>
+    </div>
+</div>
+
+

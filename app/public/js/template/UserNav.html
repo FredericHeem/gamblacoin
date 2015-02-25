@@ -1,0 +1,30 @@
+<div class="container">
+    <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+
+    <a href="#" class="brand">GamblaCoin</a>
+    <% if (!model.guest) { %>
+        <a href="#" class="brand" rel="tooltip" title="Balance in uBTC">
+            <img alt="BTC" class="btc-icon" src="/img/Bitcoin.png" /><span id="balance"> <%= Accounting.formatUBTC(model.balance) %></span></a>
+    <% } else { %>
+    <a href="#" rel="tooltip" class="brand" title="Play Coin, play for fun">
+        <img alt="PlayCoin" class="btc-icon" src="/img/PlayCoin.png" /><span id="balance"> <%= Accounting.formatUBTC(model.balance) %></span></a>
+    <% } %>
+    <div class="nav-collapse">
+        <% if (!model.guest) { %>
+            <ul class="pull-right nav">
+                <li><a href="#/account"><i class="icon-user"></i><span><%- model.username %></span></a></li>
+                <li><a href="#/deposit">Deposit</a></li>
+                <li><a href="#/withdraw">Withdraw</a></li>
+                <li><a href="#/myBets">My Bets</a></li>
+                <li><a href="#/logout" id="logout">Logout</a></li>
+            </ul>
+        <% } else { %>
+    <ul class="pull-right nav">
+
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/register">Register</a></li>
+    </ul>
+        <% } %>
+    </div>
+</div>

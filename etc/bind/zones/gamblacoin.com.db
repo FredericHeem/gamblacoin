@@ -1,0 +1,23 @@
+; BIND data file for gamblacoin.com
+;
+$TTL 14400
+@ IN SOA ns1.gamblacoin.com. info.gamblacoin.com. (
+201006601 ; Serial
+7200 ; Refresh
+120 ; Retry
+2419200 ; Expire
+604800) ; Default TTL
+;
+gamblacoin.com. IN NS ns1.gamblacoin.com.
+gamblacoin.com. IN NS ns2.gamblacoin.com.
+
+gamblacoin.com. IN MX 10 mail.gamblacoin.com.
+gamblacoin.com. IN A 200.50.230.100
+
+ns1 IN A 200.50.230.100
+ns2 IN A 200.50.230.100
+www IN CNAME gamblacoin.com.
+mail IN A 200.50.230.100
+gamblacoin.com. IN TXT "v=spf1 ip4:200.50.230.100 a mx ~all"
+mail IN TXT "v=spf1 a -all"
+
