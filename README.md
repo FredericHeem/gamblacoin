@@ -1,5 +1,7 @@
 #GamblaCoin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/FredericHeem/gamblacoin.svg)](https://greenkeeper.io/)
+
 *Gamblacoin* is a provably fair dice gaming site using Bitcoin as the main currency.
 The gambler bets an amount of bitcoin and choose a multiplier, let's say 1 bitcoin and a multiplier of 4. The house then generates a random number between 0 and 100, if the number is below 25, the gambler wins 4 bitcoin, otherwise he loses the initial bet. The odd is winning is rougly below 1 out of 4. Now if the gambler choose a mutiplier of 10, any number below 10 would make a win, the odd would be below 1 out of 10.
 Higher multiplier implies lower chance to win and vice and versa. 
